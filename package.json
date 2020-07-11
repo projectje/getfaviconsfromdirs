@@ -8,7 +8,7 @@
     "url": "git+https://github.com/projectje/getfavicon.git"
   },
   "scripts": {
-    "test": "run-func index.js getFavicon test/testfiles test/icons"
+    "test": "run-func index.js getFavicon test/testfiles test/icons/"
   },
   "keywords": [
     "favicon"
