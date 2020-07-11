@@ -5,18 +5,18 @@ This can be used for pre-caching during/before build for these icons or for retr
 
 # usage
 
-pass the folder to read and the folder to write icons to, to the function "TraverseDir"
+pass the folder to read and the folder to write icons to, to the function "getFavicon"
 
 # example
 
 `
-TraverseDir('c:/a/website//src/assets/data/', 'c:/a/websites/icon/');
+getFavicon('c:/a/website//src/assets/data/', 'c:/a/websites/icon/');
 `
 
 or e.g. in package.json before build:
 
 `
 "scripts": {
-    "fetchicons": "run-func /src/util/favicon.js TraverseDir c:/a/website//src/assets/data/ c:/a/websites/icon/"
+    "fetchicons": "run-func /src/util/favicon.js getFavicon c:/a/website//src/assets/data/ c:/a/websites/icon/"
   }
 `
