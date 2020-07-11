@@ -1,5 +1,5 @@
 {
-  "name": "getfavicon",
+  "name": "getfaviconsfromdirs",
   "version": "1.0.0",
   "description": "Traverses through folderstructure and retrieves all favicons by parsing urls",
   "main": "favicon.js",
