@@ -24,3 +24,8 @@ or e.g. in package.json before build:
     "fetchicons": "run-func /src/util/favicon.js getFavicon c:/a/website//src/assets/data/ c:/a/websites/icon/"
   }
 `
+# runtime
+
+During runtime you can reference the icons by following the same logic to build the url:
+
+const imgFilePath = imgRootDir + url.split("/")[2].split('.').reverse().join('/') + "/favicon.png";

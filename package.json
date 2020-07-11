@@ -1,11 +1,11 @@
 {
   "name": "getfaviconsfromdirs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Traverses through folderstructure and retrieves all favicons by parsing urls",
   "main": "favicon.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/projectje/getfavicon.git"
+    "url": "git+https://github.com/projectje/getfaviconsfromdirs.git"
   },
   "scripts": {
     "test": "run-func index.js getFavicon test/testfiles test/icons/"
@@ -16,9 +16,9 @@
   "author": "cogmios",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/projectje/getfavicon/issues"
+    "url": "https://github.com/projectje/getfaviconsfromdirs/issues"
   },
-  "homepage": "https://github.com/projectje/getfavicon#readme",
+  "homepage": "https://github.com/projectje/getfaviconsfromdirs#readme",
   "devDependencies": {
     "run-func": "^1.0.5"
   },
