@@ -1,5 +1,4 @@
-﻿#!/usr/bin/env node
-const dir = require('node-dir');
+﻿const dir = require('node-dir');
 const util = require('util');
 const fs = require('fs');
 const readFile = util.promisify(fs.readFile);
