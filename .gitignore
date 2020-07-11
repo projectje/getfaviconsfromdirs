@@ -1,8 +1,2 @@
 node_modules/
-test/icons/com
-test/icons/dev
-test/icons/io
-test/icons/net
-test/icons/nl
-test/icons/org
-.vscode/settings.json
+test/icons/*/
