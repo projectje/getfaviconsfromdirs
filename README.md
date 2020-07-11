@@ -1,7 +1,7 @@
 # getfavicon
 Parses a folderstructure with text files and downloads a favicon for each url found in them from the Google Favicon service.
 
-This can be used for pre-caching these icons.
+This can be used for pre-caching during/before build for these icons or for retrieving just a set of application icons
 
 # usage
 

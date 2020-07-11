@@ -13,7 +13,7 @@ const googleFaviconApi = 'https://s2.googleusercontent.com/s2/favicons?domain_ur
 /**
 * Downloads a favion in reverse domain name folder
 */
-function GenerateName(url, imgRootDir) {
+function generateName(url, imgRootDir) {
     const domain = url.split("/")[2]
     const reversedomain = domain.split('.').reverse().join('.');
     const reversedomainslash = domain.split('.').reverse().join('/');
@@ -47,17 +47,17 @@ function GenerateName(url, imgRootDir) {
 function linkify(rawText, imgRootDir) {
     var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
     return rawText.replace(urlRegex, function(url) {
-        var a = GenerateName(url, imgRootDir);
+        var a = generateName(url, imgRootDir);
     });
 }
 
 /**
  * Travese a directory for text files
  */
-function TraverseDir(dirs, imgRootDir) {
+function getFavicon(dirs, imgRootDir) {
     dir.promiseFiles(dirs)
     .then((files)=>{files.map(f=> { var r= {};readFile(f,'utf8').then ((file) => {linkify(file, imgRootDir);})})})
     .catch(e=>console.error(e))
 }
 
-module.exports = { TraverseDir };
+module.exports = { getFavicon };

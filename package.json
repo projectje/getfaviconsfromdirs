@@ -1,0 +1,30 @@
+{
+  "name": "getfavicon",
+  "version": "1.0.0",
+  "description": "Traverses through folderstructure and retrieves all favicons by parsing urls",
+  "main": "favicon.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectje/getfavicon.git"
+  },
+  "scripts": {
+    "test": "run-func index.js getFavicon test/testfiles test/icons"
+  },
+  "keywords": [
+    "favicon"
+  ],
+  "author": "cogmios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projectje/getfavicon/issues"
+  },
+  "homepage": "https://github.com/projectje/getfavicon#readme",
+  "devDependencies": {
+    "run-func": "^1.0.5"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "got": "^11.5.0",
+    "node-dir": "^0.1.17"
+  }
+}
